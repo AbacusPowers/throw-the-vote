@@ -1,0 +1,37 @@
+{
+  "name": "throw-the-vote",
+  "version": "1.0.0",
+  "description": "Fake ballot website to help people throw their votes away",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbacusPowers/throw-the-vote.git"
+  },
+  "keywords": [
+    "ballot",
+    "parody",
+    "political",
+    "comedy",
+    "election2016"
+  ],
+  "author": "Justin Maurer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbacusPowers/throw-the-vote/issues"
+  },
+  "homepage": "https://github.com/AbacusPowers/throw-the-vote#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {}
+}

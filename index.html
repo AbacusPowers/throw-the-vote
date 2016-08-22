@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Throw The Vote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url"                content="http://throwthevote.com" />
+    <meta property="og:title"              content="Throw The Vote" />
+    <meta property="og:description"        content="If you're feeling like your vote doesn't count, drop your opinion here. Get the most out of your wasted vote!" />
+    <meta property="og:site_name"          content="Throw The Vote" />
+    <meta property="og:image"          content="img/logo.png" />
+    <link rel="stylesheet" href="css/app.css">
+    <!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">-->
+    <!--<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">-->
+    <!--<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">-->
+    <!--<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">-->
+    <!--<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">-->
+    <!--<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">-->
+    <!--<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">-->
+    <!--<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">-->
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">-->
+    <!--<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">-->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<form action="form-handler.php" method="post">
+
+<div class="container">
+    <div class="form-info col-md-4 col-sm-12 form-group">
+        <p class="lead"><strong>Instructions:</strong><br>
+            1) Please fill out any of the optional fields with your personal information.
+            <br><br>
+            2) Then, check the box for the candidate of your choice.
+            <br><br>
+            3) Finally, fold the ballot in half, wad it up, or tear down the center and throw it in the nearest refuse bin, trash receptacle, or other similar location. This will ensure your vote has maximum effect.</p>
+        <label for="first-name">First Name</label>
+        <input class="form-control" type="text" id="first-name" name="first_name" placeholder="First Name">
+
+        <label for="last-name">Last Name</label>
+        <input class="form-control" type="text" id="last-name" name="last_name" placeholder="Last Name">
+
+        <label for="email">Email</label>
+        <input class="form-control" type="email" id="email" name="email" placeholder="Email">
+
+        <label for="dob">Date of Birth</label>
+        <input class="form-control" type="text" id="dob" name="dob" placeholder="Date of Birth">
+
+        <label for="race">Race / Ethnicity</label>
+        <input class="form-control" type="text" id="race" name="race" placeholder="Race / Ethnicity">
+
+        <label for="party">Political Party Affiliation</label>
+        <input class="form-control" type="text" id="party" name="party" placeholder="Political Party Affiliation">
+
+        <label for="city">City</label>
+        <input class="form-control" type="text" id="city" name="city" placeholder="City">
+
+        <label for="state">State</label>
+        <input class="form-control" type="text" id="state" name="state" placeholder="State">
+    </div>
+    <h1 class="col-md-8 page-head"><a href="/"><img src="img/logo2.png" alt="Throw The Vote"></a></h1>
+
+    <div class="form-main col-md-8 col-sm-12 form-group">
+
+        <p class="form-title">PRESIDENT AND VICE PRESIDENT OF THE UNITED STATES<br>
+            Vote for One<br>
+            PRESIDENTE Y VICE PRESIDENTE DE LOS ESTADOS UNIDOS<br>
+            (Vote por Uno)</p>
+        <div class="candidate-field radio">
+            <label for="clinton">
+                <input type="radio" id="clinton" name="candidate" value="clinton">
+                <span class="checker-thingy"></span>
+                <div class="candidate-label">
+                    <span class="candidate">Hillary Clinton</span>
+                    <span class="candidate-state">New York</span>
+                    <span class="and-y">And / Y</span>
+                    <span class="candidate">Tim Kaine</span>
+                    <span class="candidate-state">Virginia</span>
+                </div>
+                <div class="candidate-party">Democratic / Demócrata</div>
+            </label>
+        </div>
+        <div class="candidate-field radio">
+            <label for="trump">
+                <input type="radio" id="trump" name="candidate" value="trump">
+                <span class="checker-thingy"></span>
+                <div class="candidate-label">
+                    <span class="candidate">Donald Trump</span>
+                    <span class="candidate-state">New York</span>
+                    <span class="and-y">And / Y</span>
+                    <span class="candidate">Mike Pence</span>
+                    <span class="candidate-state">Indiana</span>
+                </div>
+                <div class="candidate-party">Republican / Republicano</div>
+            </label>
+        </div>
+        <div class="candidate-field radio">
+            <label for="johnson">
+                <input type="radio" id="johnson" name="candidate" value="johnson">
+                <span class="checker-thingy"></span>
+                <div class="candidate-label">
+                    <span class="candidate">Gary Johnson</span>
+                    <span class="candidate-state">New Mexico</span>
+                    <span class="and-y">And / Y</span>
+                    <span class="candidate">William Weld</span>
+                    <span class="candidate-state">Massachusetts</span>
+                </div>
+                <div class="candidate-party">Libertarian / Libertario</div>
+            </label>
+        </div>
+        <div class="candidate-field radio">
+            <label for="burritos">
+                <input type="radio" id="burritos" name="candidate" value="burritos">
+                <span class="checker-thingy"></span>
+                <div class="candidate-label">
+                    <span class="candidate">Burritos</span>
+                    <span class="candidate-state">Chipotle</span>
+                    <span class="and-y">And / Y</span>
+                    <span class="candidate">Tacos</span>
+                    <span class="candidate-state">Qdoba</span>
+                </div>
+                <div class="candidate-party">Tortilla / Tortilla</div>
+            </label>
+        </div>
+        <div class="candidate-field radio">
+            <label for="kimye">
+                <input type="radio" id="kimye" name="candidate" value="kimye">
+                <span class="checker-thingy"></span>
+                <div class="candidate-label">
+                    <span class="candidate">Kimye West</span>
+                    <span class="candidate-state">Famous Town</span>
+                    <span class="and-y">And / Y</span>
+                    <span class="candidate">Hiddleswift</span>
+                    <span class="candidate-state">White Privilegeville</span>
+                </div>
+                <div class="candidate-party">Tumblr / Túmblr</div>
+            </label>
+        </div>
+        <div class="candidate-field radio">
+            <label for="snoke">
+                <input type="radio" id="snoke" name="candidate" value="snoke">
+                <span class="checker-thingy"></span>
+                <div class="candidate-label">
+                    <span class="candidate">Supreme Leader Snoke</span>
+                    <span class="candidate-state">The Dark Side</span>
+                    <span class="and-y">And / Y</span>
+                    <span class="candidate">Kylo Ren</span>
+                    <span class="candidate-state">The Dark Side</span>
+                </div>
+                <div class="candidate-party">Daddy Issues / Cuestiones Papá</div>
+            </label>
+        </div>
+        <div class="candidate-field radio">
+            <label for="write-in">
+                <input type="radio" id="write-in" name="candidate" value="write-in">
+                <span class="checker-thingy"></span>
+                <div class="candidate-label">
+                    <span class="candidate">Write-In</span>
+                </div>
+            </label>
+        </div>
+        <input class="form-control" type="text" id="write-in-content" name="write_in" placeholder="Hint: Bernie Sanders or Your Dog">
+        <p class="disclaimer"><strong>DISCLAIMER:</strong> Please note, this ballot is fake and will not count for shit. However, if voting for Donald Trump, disregard that. This is your ballot. Please fill it out and follow instructions to submit. </p>
+        <div class="forms-end">
+            <button type="submit" class="btn btn-primary btn-lg" id="whatAWaste">Throw It Away <span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+            <a href="img/ThrowTheVote2016.pdf" id="download-link">Download a printable PDF ballot</a>
+        </div>
+    </div>
+</div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=114253528654462";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45547053-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

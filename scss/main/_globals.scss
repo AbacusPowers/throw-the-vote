@@ -1,0 +1,53 @@
+body {
+  background: white;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+}
+h1 {
+  text-align: center;
+}
+.container {
+  .form-info {
+    display: inline-block;
+    padding: 2em;
+    min-width: 300px;
+  }
+  .form-main {
+  }
+
+  padding-bottom: 4em;
+}
+
+.form-info {
+  label, input {
+    display: block;
+  }
+  input {
+    margin-bottom: 1em;
+  }
+}
+.form-main {
+  .disclaimer {
+    font-style: italic;
+    margin-top: 3em;
+  }
+  .form-title {
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+#download-link {
+  display: block;
+  text-align: center;
+  margin-top: 2em;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}

@@ -1,0 +1,56 @@
+form {
+  label {
+    font-weight: normal;
+  }
+  .checker-thingy {
+    position: relative;
+    display: block;
+    background: transparent;
+    height: 25px;
+    width: 38px;
+    border-radius: 11px;
+    border: 2px solid black;
+    margin-right: 1em;
+  }
+  .candidate-field {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    &:nth-of-type(7) {
+      margin-bottom: 1em;
+    }
+    label {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  input[type="radio"] {
+    //margin-right: 1em;
+    display: none;
+  }
+  input[type="radio"]:checked + .checker-thingy {
+    background: red;
+  }
+  .candidate-label {
+    span {
+      display: block;
+      &.candidate {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .candidate-party {
+    text-align: right;
+    margin-left: 2em;
+    flex: 1;
+  }
+  #whatAWaste {
+    margin-top: 3em;
+  }
+  .forms-end {
+    text-align: center;
+  }
+}
